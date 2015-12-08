@@ -86,7 +86,7 @@ don't do this, some of the UI elements of your application will remain in the
 language of the operating system.
 
 /////////////////////////////////////////////////////////////////////////////
-//////////////////////ÊäÈëÎÄ×Öµ½Áí´æÎªÂ¼ÖÆµÄºê///////////////////////////////
+//////////////////////è¾“å…¥æ–‡å­—åˆ°å¦å­˜ä¸ºå½•åˆ¶çš„å®///////////////////////////////
 
 
 //    Selection.TypeText Text:="hello,test"
@@ -98,28 +98,28 @@ language of the operating system.
 //        :=True, WritePassword:="", ReadOnlyRecommended:=False, EmbedTrueTypeFonts _
 //        :=False, SaveNativePictureFormat:=False, SaveFormsData:=False, _
 //        SaveAsAOCELetter:=False
-//////////////////////²åÈëÍ¼Æ¬µÄºê///////////////////////////////////////////	
+//////////////////////æ’å…¥å›¾ç‰‡çš„å®///////////////////////////////////////////	
 	Sub picture()
 '
-' picture ºê
+' picture å®
 '
 '
     Selection.InlineShapes.AddPicture FileName:= _
-        "C:\Users\½ª»¹ÌÎ\Pictures\doge.PNG", LinkToFile:=False, SaveWithDocument:= _
+        "C:\Users\å§œè¿˜æ¶›\Pictures\doge.PNG", LinkToFile:=False, SaveWithDocument:= _
         True
 End Sub	
-//////////////////////²åÈë±í¸ñ2*3µÄºê///////////////////////////////////////////
+//////////////////////æ’å…¥è¡¨æ ¼2*3çš„å®///////////////////////////////////////////
 Sub bg()
 '
-' bg ºê
+' bg å®
 '
 '
     ActiveDocument.Tables.Add Range:=Selection.Range, NumRows:=2, NumColumns:= _
         3, DefaultTableBehavior:=wdWord9TableBehavior, AutoFitBehavior:= _
         wdAutoFitFixed
     With Selection.Tables(1)
-        If .Style <> "Íø¸ñĞÍ" Then
-            .Style = "Íø¸ñĞÍ"
+        If .Style <> "ç½‘æ ¼å‹" Then
+            .Style = "ç½‘æ ¼å‹"
         End If
         .ApplyStyleHeadingRows = True
         .ApplyStyleLastRow = False
@@ -128,20 +128,20 @@ Sub bg()
         .ApplyStyleRowBands = True
         .ApplyStyleColumnBands = False
     End With
-    Selection.TypeText Text:="ĞÕÃû"
+    Selection.TypeText Text:="å§“å"
     Selection.MoveRight Unit:=wdCharacter, Count:=1
-    Selection.TypeText Text:="×¨Òµ"
+    Selection.TypeText Text:="ä¸“ä¸š"
     Selection.MoveRight Unit:=wdCharacter, Count:=1
-    Selection.TypeText Text:="Ñ§ºÅ"
+    Selection.TypeText Text:="å­¦å·"
     Selection.MoveDown Unit:=wdLine, Count:=1
     Selection.MoveLeft Unit:=wdCharacter, Count:=2
-    Selection.TypeText Text:="ÍõÂ¶Ö¥"
+    Selection.TypeText Text:="wlz"
     Selection.MoveRight Unit:=wdCharacter, Count:=1
-    Selection.TypeText Text:="¼ÆËã»úÖĞÃÀ"
+    Selection.TypeText Text:="è®¡ç®—æœºä¸­ç¾"
     Selection.MoveRight Unit:=wdCharacter, Count:=1
     Selection.MoveLeft Unit:=wdCharacter, Count:=1
     Selection.MoveRight Unit:=wdCharacter, Count:=1
-    Selection.TypeText Text:="2013012527"
+    Selection.TypeText Text:="201301"
 End Sub
 	Table tables = saveDoc.GetTables();
 	Range rg =m_Sel.GetRange();	
